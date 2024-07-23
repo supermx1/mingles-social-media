@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <url>
+        <loc>http://mingles.butterflyty.com/user/edit-about.html</loc>
+    </url>
+    <url>
+        <loc>http://mingles.butterflyty.com/user/edit-event.html</loc>
+    </url>
+    <url>
+        <loc>http://mingles.butterflyty.com/user/events.html</loc>
+    </url>
+    <url>
+        <loc>http://mingles.butterflyty.com/user/friends.html</loc>
+    </url>
+    <url>
+        <loc>http://mingles.butterflyty.com/user/index.html</loc>
+    </url>
+    <url>
+        <loc>http://mingles.butterflyty.com/user/message-chat.html</loc>
+    </url>
+    <url>
+        <loc>http://mingles.butterflyty.com/user/messages.html</loc>
+    </url>
+    <url>
+        <loc>http://mingles.butterflyty.com/user/profile.html</loc>
+    </url>
+    <url>
+        <loc>http://mingles.butterflyty.com/user/search-result.html</loc>
+    </url>
+    <url>
+        <loc>http://mingles.butterflyty.com/user/view-event.html</loc>
+    </url>
+    <url>
+        <loc>http://mingles.butterflyty.com/user/view-friend-profile.html</loc>
+    </url>
+    <url>
+        <loc>http://mingles.butterflyty.com/index.html</loc>
+    </url>
+    <url>
+        <loc>http://mingles.butterflyty.com/join.html</loc>
+    </url>
+</urlset>

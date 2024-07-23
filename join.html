@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Butterfly Mingles</title>
+    <meta name="twitter:title" content="Butterfly Mingles">
+    <meta name="twitter:description" content="You have stories to tell, and passions to share, and things to talk about that are more interesting than the weather. Get noticed for who you are, not what you look like. You have 3 minutes to leave an impression.">
+    <meta name="twitter:image" content="../assets/img/favicon.jpg">
+    <meta property="og:image" content="../assets/img/favicon.jpg">
+    <meta name="description" content="You have stories to tell, and passions to share, and things to talk about that are more interesting than the weather. Get noticed for who you are, not what you look like. You have 3 minutes to leave an impression.
+">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon" type="image/jpeg" sizes="500x500" href="assets/img/favicon.jpg">
+    <link rel="icon" type="image/jpeg" sizes="500x500" href="assets/img/favicon.jpg">
+    <link rel="icon" type="image/jpeg" sizes="500x500" href="assets/img/favicon.jpg">
+    <link rel="icon" type="image/jpeg" sizes="500x500" href="assets/img/favicon.jpg">
+    <link rel="icon" type="image/jpeg" sizes="500x500" href="assets/img/favicon.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.10.18/b-1.5.6/b-colvis-1.5.6/b-html5-1.5.6/b-print-1.5.6/cr-1.5.0/r-2.2.2/sc-2.0.0/sl-1.3.0/datatables.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+<script src="https://cdn.tiny.cloud/1/4qusfsfvg51fisrcz6qrqfj26dhxdcfvdkvoz1u5zekcg4ls/tinymce/5/tinymce.min.js" referrerpolicy="origin"/></script>
+</head>
+
+<body>
+    <div class="modal fade" role="dialog" tabindex="-1" id="forgot-password">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modalcontent">
+                <div class="modal-header modalheader">
+                    <h4 class="modal-title modaltitle">Reset your password</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <form class="mt-4">
+                        <div class="form-group"><label class="field-label-modal" for="reset-password">Enter your registered e-mail address to reset your password</label><input class="form-control input-box" type="email" id="reset-password"></div>
+                        <div class="form-group"><button class="btn btn1" type="button">Reset Password<i class="fas fa-arrow-right"></i></button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid pl-0 pr-0">
+        <div class="row">
+            <div class="col-md-3 bg-heart2 inner-padding sidebar-col">
+                <div class="text-center mb-5"><a href="index.html"><img class="img-fluid" src="assets/img/logoC.png" width="80%"></a></div>
+                <div>
+                    <ul class="nav nav-pills nav-justified">
+                        <li class="nav-item"><a class="nav-link active navlink1 nav-link1" role="tab" data-toggle="pill" href="#signin">Sign in</a></li>
+                        <li class="nav-item"><a class="nav-link navlink1 nav-link1" role="tab" data-toggle="pill" href="#signup">Sign up</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" role="tabpanel" id="signin">
+                            <form class="mt-4">
+                                <div class="form-group"><label class="field-label" for="email">E-Mail</label><input class="form-control input-box" type="email" id="email"></div>
+                                <div class="form-group"><label class="field-label" for="password">Password</label><input class="form-control input-box" type="password" id="password"></div>
+                                <div class="form-group mb-5"><a class="btn btn1" role="button" href="user/index.html">Sign in<i class="fas fa-arrow-right"></i></a></div>
+                                <div class="forgot-pw-div text-center"><a href="#forgot-password" data-toggle="modal" data-target="#forgot-password">Forgot Password?</a></div>
+                            </form>
+                        </div>
+                        <div class="tab-pane" role="tabpanel" id="signup">
+                            <form class="mt-4">
+                                <div class="form-group"><label class="field-label" for="fullname">Fullname</label><input class="form-control input-box" type="text" id="fullname"></div>
+                                <div class="form-group"><label class="field-label" for="reg_email">E-Mail</label><input class="form-control input-box" type="email" id="reg_email"></div>
+                                <div class="form-group"><label class="field-label" for="new_password">Password</label>
+                                    <div class="input-group"><input class="form-control pwd input-box3" type="password" id="password" required="">
+                                        <div class="input-group-append reveal-btn"><button class="btn reveal-btn1" id="show_password" type="button"><i class="la la-eye"></i></button></div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label field-label" for="formCheck-1">You must be over 18 to join and you agree to our&nbsp;<a class="terms-link" href="#">Terms of Use</a></label></div>
+                                </div>
+                                <div class="form-group"><button class="btn btn1" type="button">Create an account<i class="fas fa-arrow-right"></i></button></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col main-col d-sm-none d-xs-none d-md-block d-lg-block"><!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/c158d85ae7e7500587915aee5afc4a07.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe></div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.10.18/b-1.5.6/b-colvis-1.5.6/b-html5-1.5.6/b-print-1.5.6/cr-1.5.0/r-2.2.2/sc-2.0.0/sl-1.3.0/datatables.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/js/select2.min.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js" crossorigin="anonymous"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>

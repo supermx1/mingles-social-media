@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Butterfly Mingles</title>
+    <meta name="twitter:title" content="Butterfly Mingles">
+    <meta name="twitter:description" content="You have stories to tell, and passions to share, and things to talk about that are more interesting than the weather. Get noticed for who you are, not what you look like. You have 3 minutes to leave an impression.">
+    <meta name="twitter:image" content="../assets/img/favicon.jpg">
+    <meta property="og:image" content="../assets/img/favicon.jpg">
+    <meta name="description" content="You have stories to tell, and passions to share, and things to talk about that are more interesting than the weather. Get noticed for who you are, not what you look like. You have 3 minutes to leave an impression.
+">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon" type="image/jpeg" sizes="500x500" href="../assets/img/favicon.jpg">
+    <link rel="icon" type="image/jpeg" sizes="500x500" href="../assets/img/favicon.jpg">
+    <link rel="icon" type="image/jpeg" sizes="500x500" href="../assets/img/favicon.jpg">
+    <link rel="icon" type="image/jpeg" sizes="500x500" href="../assets/img/favicon.jpg">
+    <link rel="icon" type="image/jpeg" sizes="500x500" href="../assets/img/favicon.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="manifest" href="../manifest.json">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.10.18/b-1.5.6/b-colvis-1.5.6/b-html5-1.5.6/b-print-1.5.6/cr-1.5.0/r-2.2.2/sc-2.0.0/sl-1.3.0/datatables.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/styles.min.css">
+<script src="https://cdn.tiny.cloud/1/4qusfsfvg51fisrcz6qrqfj26dhxdcfvdkvoz1u5zekcg4ls/tinymce/5/tinymce.min.js" referrerpolicy="origin"/></script><!--<script src="https://cdn.tiny.cloud/1/4qusfsfvg51fisrcz6qrqfj26dhxdcfvdkvoz1u5zekcg4ls/tinymce/5/tinymce.min.js" referrerpolicy="origin"/></script>-->
+
+<script src="https://cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
+<script src="https://cdn.ckeditor.com/ckeditor5/18.0.0/classic/ckeditor.js"></script>
+</head>
+
+<body class="bg-lighter-pink">
+    <div class="modal fade" role="dialog" tabindex="-1" id="event">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modalcontent">
+                <div class="modal-header modalheader">
+                    <h4 class="modal-title modaltitle">New Events</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="modal-close">×</span></button></div>
+                <div class="modal-body pt-0">
+                    <form class="mt-4">
+                        <div class="form-row">
+                            <div class="col-md-12">
+                                <div class="form-group"><label class="field-label-modal" for="eventName">Event Name</label><input class="form-control input-box" type="text" id="eventName" required="" autofocus=""></div>
+                                <div class="form-group"><label class="field-label-modal" for="state">Event Type</label><select class="form-control input-box select" id="state" style="width: 100%;"><option value="12" selected="">- Select -</option><option value="Abuja">Private</option><option value="Public">Public</option><option value="Something">Something</option></select></div>
+                                <div
+                                    class="form-group"><label class="field-label-modal">Description</label><textarea class="form-control input-box" id="newmessage" required=""></textarea></div>
+                            <div class="form-group"><label class="field-label-modal" for="invitationSlots">Invitation Slots</label><input class="form-control input-box" type="number" id="invitationSlots"></div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group"><label class="field-label-modal">Start Date/Time</label><input class="form-control input-box" type="datetime-local" required=""></div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group"><label class="field-label-modal">End Date/Time</label><input class="form-control input-box" type="datetime-local" required=""></div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group"><label class="field-label-modal" for="address">Address</label><input class="form-control input-box" type="text" id="address"></div>
+                            <div class="form-group"><label class="field-label-modal" for="state">State</label><select class="form-control input-box select" id="state" style="width: 100%;"><option value="12" selected="">- Select State -</option><option value="Abuja">Abuja</option><option value="Lagos">Lagos</option></select></div>
+                            <div
+                                class="form-group"><label class="field-label-modal d-block" for="state">Upload Image (500 x 500)</label><input type="file" accept="image/*" required=""></div>
+                        <div class="form-group"><button class="btn btn1" type="button">Create Event<i class="fas fa-arrow-right"></i></button></div>
+                </div>
+            </div>
+            </form>
+        </div>
+    </div>
+    </div>
+    </div>
+    <nav class="navbar navbar-light navbar-expand-md sticky-top shadow-sm bg-white">
+        <div class="container-fluid">
+            <div class="container"><a class="navbar-brand" id="logo2" href="#"></a><button data-toggle="collapse" class="navbar-toggler navbartogglrer" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon" style="background: none;"><i class="icon-options"></i></span></button>
+                <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item mr-5" role="presentation">
+                            <div class="input-group"><input class="form-control input-box2" type="search" placeholder="Search">
+                                <div class="input-group-append"><button class="btn reveal" type="button"><i class="icon-magnifier"></i></button></div>
+                            </div>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <div class="nav-item dropdown mobile-hidden mobile-hidden2"><a class="dropdown-toggle no-caret profile-link" data-toggle="dropdown" aria-expanded="false" href="#"><img class="rounded-circle img-fluid shadow mr-2" width="40px" src="../assets/img/0000596.jpg">Hi, Darth Vadar</a>
+                                <div class="dropdown-menu dropdownmenu"
+                                    role="menu"><a class="dropdown-item dropdown-menu-item" role="presentation" href="profile.html"><i class="icon-user mr-3"></i>Profile</a><a class="dropdown-item dropdown-menu-item" role="presentation" href="messages.html"><i class="icon-speech mr-3"></i>Messages</a>
+                                    <a
+                                        class="dropdown-item dropdown-menu-item" role="presentation" href="../index.html"><i class="icon-logout mr-3"></i>Log Out</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav desktop-hidden">
+                        <li class="nav-item navitem" role="presentation"><a class="nav-link" href="#"><i class="icon-screen-desktop mr-2"></i>Home</a></li>
+                        <li class="nav-item navitem" role="presentation"><a class="nav-link" href="#"><i class="icon-user mr-2" events=""></i>My Profile</a></li>
+                        <li class="nav-item navitem" role="presentation"><a class="nav-link" href="#"><i class="icon-calendar mr-2"></i>Events</a></li>
+                        <li class="nav-item navitem" role="presentation"><a class="nav-link" href="#"><i class="icon-people mr-2"></i>Friends</a></li>
+                        <li class="nav-item navitem" role="presentation"><a class="nav-link" href="#"><i class="icon-speech mr-2"></i>Messages</a></li>
+                    </ul>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-3 dashboard-sidebar-left mobile-hidden mobile-hidden2">
+                <div class="card card1 p-0 mb-3">
+                    <div class="card-body p-0 text-center">
+                        <div class="p-3 bg-heart profile-bg"></div><a class="card-link" href="profile.html"><img class="rounded-circle img-fluid mb-3 profile-img" src="../assets/img/0000596.jpg" width="90" loading="lazy"></a>
+                        <h6 class="mb-0 profile-name">Darth Vadar</h6>
+                        <p class="username-tag">@d_vadar</p>
+                    </div>
+                </div>
+                <div class="card shadow-sm card1 pt-3 pb-3 mobile-hidden mb-4">
+                    <div class="card-body p-0">
+                        <ul class="nav flex-column">
+                            <li class="nav-item"><a class="nav-link active sidebar-nav active" href="index.html"><i class="icon-screen-desktop mr-3"></i>Home</a></li>
+                            <li class="nav-item"><a class="nav-link sidebar-nav" href="profile.html"><i class="icon-user mr-3"></i>My Profile</a></li>
+                            <li class="nav-item"><a class="nav-link sidebar-nav" href="events.html"><i class="icon-calendar mr-3"></i>Events</a></li>
+                            <li class="nav-item"><a class="nav-link sidebar-nav" href="friends.html"><i class="icon-people mr-3"></i>Friends</a></li>
+                            <li class="nav-item"><a class="nav-link sidebar-nav" href="messages.html"><i class="icon-speech mr-3"></i>Messages<span class="badge badge-pill badge-danger ml-2 notification-bubble">3</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col dashboard-main-col">
+                <div class="row">
+                    <div class="col-md-12 mb-4">
+                        <form class="pull-right"><select class="form-control select"><option value="12" selected="">- Event Type -</option><option value="13">Private</option><option value="14">Exclusive</option></select></form>
+                        <h5 class="page-title">Events</h5>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="card-div"><img class="card-div-img" src="../assets/img/4fL8srPm.jpg" width="100%" height="230.25px">
+                            <div class="card-div-inner">
+                                <div class="dropright pull-right"><a class="btn dropdown-toggle share-btn" data-toggle="dropdown" aria-expanded="false" role="button" href="#"><i class="icon-share-alt pull-right card-div-icon"></i></a>
+                                    <div class="dropdown-menu dropdownmenu" role="menu">
+                                        <h6 class="dropdown-header" role="presentation">Share Link</h6><a class="dropdown-item dropdown-menu-item" role="presentation" href="#"><i class="la la-copy share-icon"></i>Copy Address</a></div>
+                                </div>
+                                <a class="link2" href="#">
+                                    <h1 class="card-div-h" title="La Fiesta Gold">La Fiesta Gold</h1>
+                                </a>
+                                <p class="card-div-date" title="Date"><i class="la la-calendar mr-1"></i>30 April 2020</p>
+                                <p class="card-div-add" title="Location"><i class="la la-map-marker mr-1"></i>Lagos</p>
+                                <div class="container mb-2">
+                                    <div class="row big-countdown" data-countdown="04/30/2020 02:51:00">
+                                        <div class="col-6 col-sm-3"><span class="number-days">00</span><span class="txt-countdown">D </span></div>
+                                        <div class="col-6 col-sm-3"><span class="number-hours">00</span><span class="txt-countdown">H </span></div>
+                                        <div class="col-6 col-sm-3"><span class="number-minutes">00</span><span class="txt-countdown">M </span></div>
+                                        <div class="col-6 col-sm-3"><span class="number-seconds">00</span><span class="txt-countdown">S </span></div>
+                                    </div>
+                                </div><a class="btn btn-block link-btn" role="button" href="view-event.html">Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="card-div"><img class="card-div-img" src="../assets/img/rae6BqEm.jpg" width="100%" height="230.25px">
+                            <div class="card-div-inner">
+                                <div class="dropright pull-right"><a class="btn dropdown-toggle share-btn" data-toggle="dropdown" aria-expanded="false" role="button" href="#"><i class="icon-share-alt pull-right card-div-icon"></i></a>
+                                    <div class="dropdown-menu dropdownmenu" role="menu">
+                                        <h6 class="dropdown-header" role="presentation">Share Link</h6><a class="dropdown-item dropdown-menu-item" role="presentation" href="#"><i class="la la-copy share-icon"></i>Copy Address</a></div>
+                                </div>
+                                <a class="link2" href="#">
+                                    <h1 class="card-div-h" title="H20 Shutdown Pool Party">H20 Shutdown Pool Party</h1>
+                                </a>
+                                <p class="card-div-date" title="Date"><i class="la la-calendar mr-1"></i>9 May 2020</p>
+                                <p class="card-div-add" title="Location"><i class="la la-map-marker mr-1"></i>Abuja</p>
+                                <div class="container mb-2">
+                                    <div class="row big-countdown" data-countdown="05/9/2020 02:51:00">
+                                        <div class="col-6 col-sm-3"><span class="number-days">00</span><span class="txt-countdown">D </span></div>
+                                        <div class="col-6 col-sm-3"><span class="number-hours">00</span><span class="txt-countdown">H </span></div>
+                                        <div class="col-6 col-sm-3"><span class="number-minutes">00</span><span class="txt-countdown">M </span></div>
+                                        <div class="col-6 col-sm-3"><span class="number-seconds">00</span><span class="txt-countdown">S </span></div>
+                                    </div>
+                                </div><a class="btn btn-block link-btn" role="button" href="view-event.html">Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="card-div"><img class="card-div-img" src="../assets/img/rae6BqEm.jpg" width="100%" height="230.25px">
+                            <div class="card-div-inner">
+                                <div class="dropright pull-right"><a class="btn dropdown-toggle share-btn" data-toggle="dropdown" aria-expanded="false" role="button" href="#"><i class="icon-share-alt pull-right card-div-icon"></i></a>
+                                    <div class="dropdown-menu dropdownmenu" role="menu">
+                                        <h6 class="dropdown-header" role="presentation">Share Link</h6><a class="dropdown-item dropdown-menu-item" role="presentation" href="#"><i class="la la-copy share-icon"></i>Copy Address</a></div>
+                                </div>
+                                <a class="link2" href="#">
+                                    <h1 class="card-div-h" title="H20 Shutdown Pool Party">H20 Shutdown Pool Party</h1>
+                                </a>
+                                <p class="card-div-date" title="Date"><i class="la la-calendar mr-1"></i>9 May 2020</p>
+                                <p class="card-div-add" title="Location"><i class="la la-map-marker mr-1"></i>Abuja</p>
+                                <div class="container mb-2">
+                                    <div class="row big-countdown" data-countdown="05/9/2020 02:51:00">
+                                        <div class="col-6 col-sm-3"><span class="number-days">00</span><span class="txt-countdown">D </span></div>
+                                        <div class="col-6 col-sm-3"><span class="number-hours">00</span><span class="txt-countdown">H </span></div>
+                                        <div class="col-6 col-sm-3"><span class="number-minutes">00</span><span class="txt-countdown">M </span></div>
+                                        <div class="col-6 col-sm-3"><span class="number-seconds">00</span><span class="txt-countdown">S </span></div>
+                                    </div>
+                                </div><a class="btn btn-block link-btn" role="button" href="view-event.html">Learn More</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mobile-hidden mobile-hidden2">
+                <div class="sticky"><a class="btn btn-block btn1 mb-3" role="button" data-toggle="modal" data-target="#event" href="#event">Create Event<i class="fas fa-arrow-right"></i></a>
+                    <div class="card card1 mb-4">
+                        <div class="card-body">
+                            <h5 class="card-heading">Your Events</h5>
+                            <hr>
+                            <div class="media mb-3"><img class="rounded-circle img-fluid mr-3" src="../assets/img/sample.jpg" width="45">
+                                <div class="media-body">
+                                    <div class="dropdown pull-right"><button class="btn dropdown-toggle no-caret more" data-toggle="dropdown" aria-expanded="false" type="button">&nbsp;<i class="icon-options more-icon"></i></button>
+                                        <div class="dropdown-menu dropdownmenu" role="menu"><a class="dropdown-item dropdown-menu-item" role="presentation" href="edit-event.html"><i class="icon-note mr-3"></i>Edit Event</a></div>
+                                    </div>
+                                    <a class="link1" href="view-event.html">
+                                        <h6 class="mb-0 message-heading">Boat Club Meetup</h6>
+                                    </a>
+                                    <p class="message-date mb-0">Added:&nbsp; 3 days ago</p>
+                                    <p class="message-date mb-0"><i class="icon-calendar mr-2"></i>&nbsp;3 July 2020</p>
+                                    <a class="link1" href="#">
+                                        <p data-toggle="tooltip" data-bs-tooltip="" class="message-date mb-0" title="You and 51 friends RSVP'd"><i class="icon-pin mr-2"></i>&nbsp;51</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="text-center no-result-div pt-2 pb-2 pl-1 pr-1"><small>You have not posted any events</small></div>
+                        </div>
+                    </div>
+                    <div class="card card1 mb-4">
+                        <div class="card-body">
+                            <div class="pull-right"><a class="link-btn" href="events.html">See More</a></div>
+                            <h5 class="card-heading">Events</h5>
+                            <hr>
+                            <div class="media mb-3"><img class="rounded-circle img-fluid mr-3" src="../assets/img/sample.jpg" width="45">
+                                <div class="media-body">
+                                    <a class="link1" href="view-event.html">
+                                        <h6 class="mb-0 message-heading">Boat Club Meetup</h6>
+                                    </a>
+                                    <p class="message-date mb-0"><i class="icon-calendar mr-2"></i>&nbsp;3 July 2020</p>
+                                    <a class="link1" href="#">
+                                        <p data-toggle="tooltip" data-bs-tooltip="" class="message-date mb-0" title="You and 51 friends RSVP'd"><i class="icon-pin mr-2"></i>&nbsp;51</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="media mb-3"><img class="rounded-circle img-fluid mr-3" src="../assets/img/WQ.jpg" width="45">
+                                <div class="media-body">
+                                    <a class="link1" href="view-event.html">
+                                        <h6 class="mb-0 message-heading">Singles Jingle</h6>
+                                    </a>
+                                    <p class="message-date mb-0"><i class="icon-calendar mr-2"></i>&nbsp;25 August 2020</p>
+                                    <a class="link1" href="#">
+                                        <p data-toggle="tooltip" data-bs-tooltip="" class="message-date mb-0" title="You and 12 friends RSVP'd"><i class="icon-pin mr-2"></i>&nbsp;12</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.10.18/b-1.5.6/b-colvis-1.5.6/b-html5-1.5.6/b-print-1.5.6/cr-1.5.0/r-2.2.2/sc-2.0.0/sl-1.3.0/datatables.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/js/select2.min.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js" crossorigin="anonymous"></script>
+    <script src="../assets/js/script.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Butterfly Mingles</title>
+    <meta name="twitter:title" content="Butterfly Mingles">
+    <meta name="twitter:description" content="You have stories to tell, and passions to share, and things to talk about that are more interesting than the weather. Get noticed for who you are, not what you look like. You have 3 minutes to leave an impression.">
+    <meta name="twitter:image" content="../assets/img/favicon.jpg">
+    <meta property="og:image" content="../assets/img/favicon.jpg">
+    <meta name="description" content="You have stories to tell, and passions to share, and things to talk about that are more interesting than the weather. Get noticed for who you are, not what you look like. You have 3 minutes to leave an impression.
+">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon" type="image/jpeg" sizes="500x500" href="../assets/img/favicon.jpg">
+    <link rel="icon" type="image/jpeg" sizes="500x500" href="../assets/img/favicon.jpg">
+    <link rel="icon" type="image/jpeg" sizes="500x500" href="../assets/img/favicon.jpg">
+    <link rel="icon" type="image/jpeg" sizes="500x500" href="../assets/img/favicon.jpg">
+    <link rel="icon" type="image/jpeg" sizes="500x500" href="../assets/img/favicon.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="manifest" href="../manifest.json">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.10.18/b-1.5.6/b-colvis-1.5.6/b-html5-1.5.6/b-print-1.5.6/cr-1.5.0/r-2.2.2/sc-2.0.0/sl-1.3.0/datatables.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/styles.min.css">
+<script src="https://cdn.tiny.cloud/1/4qusfsfvg51fisrcz6qrqfj26dhxdcfvdkvoz1u5zekcg4ls/tinymce/5/tinymce.min.js" referrerpolicy="origin"/></script><!--<script src="https://cdn.tiny.cloud/1/4qusfsfvg51fisrcz6qrqfj26dhxdcfvdkvoz1u5zekcg4ls/tinymce/5/tinymce.min.js" referrerpolicy="origin"/></script>-->
+
+<script src="https://cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
+<script src="https://cdn.ckeditor.com/ckeditor5/18.0.0/classic/ckeditor.js"></script>
+</head>
+
+<body class="bg-lighter-pink">
+    <div class="modal fade" role="dialog" tabindex="-1" id="post">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modalcontent">
+                <div class="modal-header modalheader">
+                    <h4 class="modal-title modaltitle">New Post</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="modal-close">×</span></button></div>
+                <div class="modal-body">
+                    <form class="mt-4">
+                        <div class="form-group"><textarea class="form-control input-box" id="newmessage"></textarea></div>
+                        <div class="form-group"><button class="btn btn1" type="button">Post<i class="fas fa-arrow-right"></i></button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-light navbar-expand-md sticky-top shadow-sm bg-white">
+        <div class="container-fluid">
+            <div class="container"><a class="navbar-brand" id="logo2" href="#"></a><button data-toggle="collapse" class="navbar-toggler navbartogglrer" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon" style="background: none;"><i class="icon-options"></i></span></button>
+                <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item mr-5" role="presentation">
+                            <div class="input-group"><input class="form-control input-box2" type="search" placeholder="Search">
+                                <div class="input-group-append"><button class="btn reveal" type="button"><i class="icon-magnifier"></i></button></div>
+                            </div>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <div class="nav-item dropdown mobile-hidden mobile-hidden2"><a class="dropdown-toggle no-caret profile-link" data-toggle="dropdown" aria-expanded="false" href="#"><img class="rounded-circle img-fluid shadow mr-2" width="40px" src="../assets/img/0000596.jpg">Hi, Darth Vadar</a>
+                                <div class="dropdown-menu dropdownmenu"
+                                    role="menu"><a class="dropdown-item dropdown-menu-item" role="presentation" href="profile.html"><i class="icon-user mr-3"></i>Profile</a><a class="dropdown-item dropdown-menu-item" role="presentation" href="messages.html"><i class="icon-speech mr-3"></i>Messages</a>
+                                    <a
+                                        class="dropdown-item dropdown-menu-item" role="presentation" href="../index.html"><i class="icon-logout mr-3"></i>Log Out</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav desktop-hidden">
+                        <li class="nav-item navitem" role="presentation"><a class="nav-link" href="#"><i class="icon-screen-desktop mr-2"></i>Home</a></li>
+                        <li class="nav-item navitem" role="presentation"><a class="nav-link" href="#"><i class="icon-user mr-2" events=""></i>My Profile</a></li>
+                        <li class="nav-item navitem" role="presentation"><a class="nav-link" href="#"><i class="icon-calendar mr-2"></i>Events</a></li>
+                        <li class="nav-item navitem" role="presentation"><a class="nav-link" href="#"><i class="icon-people mr-2"></i>Friends</a></li>
+                        <li class="nav-item navitem" role="presentation"><a class="nav-link" href="#"><i class="icon-speech mr-2"></i>Messages</a></li>
+                    </ul>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-3 dashboard-sidebar-left mobile-hidden mobile-hidden2">
+                <div class="card card1 p-0 mb-3">
+                    <div class="card-body p-0 text-center">
+                        <div class="p-3 bg-heart profile-bg"></div><a class="card-link" href="profile.html"><img class="rounded-circle img-fluid mb-3 profile-img" src="../assets/img/0000596.jpg" width="90" loading="lazy"></a>
+                        <h6 class="mb-0 profile-name">Darth Vadar</h6>
+                        <p class="username-tag">@d_vadar</p>
+                    </div>
+                </div>
+                <div class="card shadow-sm card1 pt-3 pb-3 mobile-hidden mb-4">
+                    <div class="card-body p-0">
+                        <ul class="nav flex-column">
+                            <li class="nav-item"><a class="nav-link active sidebar-nav active" href="index.html"><i class="icon-screen-desktop mr-3"></i>Home</a></li>
+                            <li class="nav-item"><a class="nav-link sidebar-nav" href="profile.html"><i class="icon-user mr-3"></i>My Profile</a></li>
+                            <li class="nav-item"><a class="nav-link sidebar-nav" href="events.html"><i class="icon-calendar mr-3"></i>Events</a></li>
+                            <li class="nav-item"><a class="nav-link sidebar-nav" href="friends.html"><i class="icon-people mr-3"></i>Friends</a></li>
+                            <li class="nav-item"><a class="nav-link sidebar-nav" href="messages.html"><i class="icon-speech mr-3"></i>Messages<span class="badge badge-pill badge-danger ml-2 notification-bubble">3</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col dashboard-main-col">
+                <h5 class="page-title">Harleleen Queenzel's Profile</h5>
+                <div class="card mb-3 card1">
+                    <div class="card-body">
+                        <div class="dropdown pull-right"><button class="btn dropdown-toggle no-caret more" data-toggle="dropdown" aria-expanded="false" type="button">&nbsp;<i class="icon-options"></i></button>
+                            <div class="dropdown-menu dropdownmenu" role="menu"><a class="dropdown-item dropdown-menu-item" role="presentation" href="#"><i class="icon-trash mr-3"></i>Delete Post</a></div>
+                        </div>
+                        <div class="media mb-3"><img class="rounded-circle img-fluid mr-3" src="../assets/img/000022.jpg" width="45">
+                            <div class="media-body">
+                                <a class="link1" href="#" style="width: 80%;display: block;">
+                                    <h6 class="mb-0 post-name" style="width: 50%;">Harleen Queenzel</h6>
+                                </a>
+                                <p class="post-date" style="width: 60%;">Posted: 2 days ago</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="post-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <hr><a class="card-link link1" href="#"><i class="icon-like"></i>&nbsp;13&nbsp;</a>
+                        <div class="dropdown pull-right"><button class="btn dropdown-toggle no-caret more" data-toggle="dropdown" aria-expanded="false" type="button">&nbsp;<i class="icon-share-alt mr-1"></i><span>Share</span></button>
+                            <div class="dropdown-menu dropdownmenu" role="menu"><a class="dropdown-item dropdown-menu-item copy" role="presentation" data-clipboard-action="copy" data-clipboard-text="copy this now"><i class="icon-link mr-3"></i>Copy Post Link</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 card1">
+                    <div class="card-body">
+                        <div class="dropdown pull-right"><button class="btn dropdown-toggle no-caret more" data-toggle="dropdown" aria-expanded="false" type="button">&nbsp;<i class="icon-options"></i></button>
+                            <div class="dropdown-menu dropdownmenu" role="menu"><a class="dropdown-item dropdown-menu-item" role="presentation" href="#"><i class="icon-trash mr-3"></i>Delete Post</a></div>
+                        </div>
+                        <div class="media mb-3"><img class="rounded-circle img-fluid mr-3" src="../assets/img/000022.jpg" width="45">
+                            <div class="media-body">
+                                <a class="link1" href="#" style="width: 80%;display: block;">
+                                    <h6 class="mb-0 post-name" style="width: 50%;">Harleen Queenzel<br></h6>
+                                </a>
+                                <p class="post-date" style="width: 60%;">Posted: 4 days ago</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="post-p">Execute order 66!</p>
+                        </div>
+                        <hr><a class="card-link link1" href="#"><i class="icon-like"></i>&nbsp;34&nbsp;</a>
+                        <div class="dropdown pull-right"><button class="btn dropdown-toggle no-caret more" data-toggle="dropdown" aria-expanded="false" type="button">&nbsp;<i class="icon-share-alt mr-1"></i><span>Share</span></button>
+                            <div class="dropdown-menu dropdownmenu" role="menu"><a class="dropdown-item dropdown-menu-item copy" role="presentation" data-clipboard-action="copy" data-clipboard-text="copy this now"><i class="icon-link mr-3"></i>Copy Post Link</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mobile-hidden mobile-hidden2">
+                <div class="sticky">
+                    <div class="text-center mb-3"><img class="img-fluid" width="500" height="500" src="../assets/img/000022.jpg" loading="lazy"></div>
+                    <div class="card card1 mb-4">
+                        <div class="card-body">
+                            <h5 class="card-heading">About</h5>
+                            <hr>
+                            <div class="p-2 about-div mb-3">
+                                <p class="mb-0">I love Mr. J. I have a baseball bat and i am not scared to use it.</p>
+                            </div>
+                            <h6 class="sidebar-about-h mb-0">Fullname</h6>
+                            <p class="sidebar-about-p">Harleen Queenzel</p>
+                            <h6 class="sidebar-about-h mb-0">Username</h6>
+                            <p class="sidebar-about-p">@h_queen</p>
+                            <h6 class="sidebar-about-h mb-0">Email</h6>
+                            <p class="sidebar-about-p">harleyqueeenn@dc.com</p>
+                            <h6 class="sidebar-about-h mb-0">Phone</h6>
+                            <p class="sidebar-about-p">+1 900 800000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.10.18/b-1.5.6/b-colvis-1.5.6/b-html5-1.5.6/b-print-1.5.6/cr-1.5.0/r-2.2.2/sc-2.0.0/sl-1.3.0/datatables.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/js/select2.min.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js" crossorigin="anonymous"></script>
+    <script src="../assets/js/script.min.js"></script>
+</body>
+
+</html>
